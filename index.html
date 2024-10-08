@@ -15,9 +15,97 @@
             crossorigin="anonymous"
         ></script>
         <!-- Font awesome linking end -->
+
+        <!-- Styles start -->
+        <style>
+            .text-semi-black {
+                color: #000000b9;
+            }
+            .bg-main {
+                background-color: #1ab69e;
+            }
+            .text-main {
+                color: #1ab69e;
+            }
+        </style>
+        <!-- Styles end -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Edu Blink</title>
     </head>
-    <body></body>
+    <body>
+        <!-- Header section start -->
+        <section>
+            <!-- Navbar section start -->
+            <section
+                class="py-5 w-[95%] flex justify-between items-center md:container lg:container m-auto"
+            >
+                <!-- Left div start -->
+                <div class="flex items-center gap-10">
+                    <!-- Logo and category start -->
+                    <div class="flex items-center gap-5">
+                        <img class="mr-5" src="images/logo-dark.png" alt="" />
+                        <h3
+                            class="ml-5 items-center gap-3 font-semibold hidden md:flex lg:flex"
+                        >
+                            <i class="text-main text-3xl fa-solid fa-list"></i>
+                            Category
+                        </h3>
+                    </div>
+                    <!-- Logo and category end -->
+
+                    <!-- Nav items start -->
+                    <div class="text-semi-black hidden md:block lg:block">
+                        <ul class="flex gap-8 font-bold cursor-pointer">
+                            <li>Home</li>
+                            <li>Pages</li>
+                            <li>Blog</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <!-- Nav items end -->
+                </div>
+                <!-- Left div end -->
+
+                <!-- Right div start -->
+                <div class="items-center gap-10 hidden md:flex lg:flex">
+                    <i
+                        class="text-2xl cursor-pointer fa-solid fa-magnifying-glass"
+                    ></i>
+                    <i
+                        class="text-2xl cursor-pointer fa-solid fa-cart-shopping"
+                    ></i>
+                    <button class="btn bg-main text-white font-bold text-lg">
+                        Try For Free <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <!-- Right div end -->
+                <i
+                    id="small-dev-btn"
+                    class="flex justify-center items-center rounded-full border-[#1ab69e] cursor-pointer text-2xl text-main border w-[50px] h-[50px] md:hidden lg:hidden fa-solid fa-bars"
+                ></i>
+            </section>
+            <!-- Small device -->
+            <div id="small-dev-nav" class="border border-[#1ab69e] rounded-lg w-[95%] md:container lg:container m-auto hidden p-2">
+                <div>
+                    <button class="btn bg-[#1ab69e] text-white w-full">Try For Free  <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <ul class="flex justify-evenly my-3">
+                    <li class="text-main">Home</li>
+                    <li >Pages</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <!-- Small device -->
+            <!-- Navbar section end -->
+        </section>
+        <!-- Header section end -->
+
+        <!-- Js linking -->
+         <script src="js/script.js"></script>
+        <!-- Js linking end -->
+    </body>
 </html>
